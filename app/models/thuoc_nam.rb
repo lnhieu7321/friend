@@ -1,0 +1,2 @@
+class ThuocNam < ApplicationRecord
+end

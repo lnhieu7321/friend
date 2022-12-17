@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+
+
+<div class="container">
+  <h1>Thông tin chi tiết</h1>
+  <%= render @thuoc_nam %>
+  <%= link_to "Edit", edit_thuoc_nam_path(@thuoc_nam) %> |
+  <%= link_to "Back", thuoc_nams_path %>
+  <%= button_to "Delete", @thuoc_nam, method: :delete %>
+</div>

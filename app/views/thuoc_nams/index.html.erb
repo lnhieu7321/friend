@@ -1,0 +1,19 @@
+<div class='container'><p style="color: green"><%= notice %></p>
+
+<h1>Danh sách quản lý cây thuốc nam </h1>
+
+<div id="thuoc_nams">
+    <div class="list">
+      <% @thuoc_nams.each do |thuoc_nam| %>
+      <%= render thuoc_nam %>
+    </div>
+    <div class="show">
+      <p >
+        <%= link_to "Show", thuoc_nam %>   
+      </p>
+    </div>
+      
+    <% end %>
+</div>
+  <%= link_to "New", new_thuoc_nam_path %>
+</div>
